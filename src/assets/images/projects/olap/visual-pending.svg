@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">OLAP analytics abstract project visual</title>
+  <desc id="desc">Abstract three-dimensional analytical cube. Verified cube screenshot pending.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#081628"/>
+      <stop offset="1" stop-color="#111831"/>
+    </linearGradient>
+    <linearGradient id="faceA" x1="0" x2="1">
+      <stop offset="0" stop-color="#2bd8ef" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#7259ff" stop-opacity=".72"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="30" fill="url(#bg)"/>
+  <g transform="translate(600 330)" stroke="#a8eefe" stroke-width="4">
+    <path d="M0-220 240-90 0 40-240-90Z" fill="url(#faceA)"/>
+    <path d="M-240-90 0 40 0 260-240 125Z" fill="#2ed1e8" fill-opacity=".24"/>
+    <path d="M240-90 0 40 0 260 240 125Z" fill="#8a5cff" fill-opacity=".28"/>
+    <g opacity=".6">
+      <path d="M-160-47 80-177M-80-3 160-133M-120-155 120-25M0-220 240-90"/>
+      <path d="M-160-47-160 170M-80-3-80 215M-240-90 0 40M0 113-240-20M0 187-240 54"/>
+      <path d="M80-3 80 215M160-47 160 170M0 113 240-20M0 187 240 54"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#edf6ff">
+    <text x="76" y="88" font-size="27" font-weight="700" letter-spacing="3">OLAP ANALYTICS</text>
+    <text x="76" y="610" fill="#9cadc8" font-size="18">Verified cube capture pending</text>
+  </g>
+</svg>
+

@@ -1,0 +1,16 @@
+{
+  "short_name": "Leticia AI",
+  "name": "Leticia Bouchenna — Data Scientist & Applied AI Engineer",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#07101d",
+  "background_color": "#07101d"
+}

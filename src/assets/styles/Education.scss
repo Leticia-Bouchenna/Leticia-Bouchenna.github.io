@@ -1,0 +1,378 @@
+.education-section {
+  border-bottom: 1px solid var(--line);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.education-card {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(145deg, var(--surface), var(--surface-raised));
+  box-shadow: var(--shadow-soft);
+  transition: border-color 240ms ease, box-shadow 240ms ease, transform 240ms ease;
+}
+
+.education-card::after {
+  position: absolute;
+  right: -80px;
+  bottom: -110px;
+  width: 230px;
+  height: 230px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  content: "";
+}
+
+.education-card:hover {
+  border-color: color-mix(in srgb, var(--cyan) 55%, var(--line));
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.education-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.education-card-top .organization-logo {
+  width: 78px;
+  height: 58px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  box-shadow: 0 8px 24px rgba(5, 17, 38, 0.08);
+}
+
+.education-card-top .organization-logo img {
+  width: 90%;
+  height: 90%;
+  border-radius: 0;
+}
+
+.education-card-top > span {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.73rem;
+}
+
+.education-card h3 {
+  max-width: 520px;
+  margin-bottom: 11px;
+  color: var(--text);
+  font-size: clamp(1.3rem, 2.3vw, 1.65rem);
+  letter-spacing: -0.025em;
+}
+
+.education-institution {
+  margin-bottom: 28px;
+  color: var(--cyan);
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.education-specialization {
+  position: relative;
+  z-index: 1;
+  max-width: 390px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.education-specialization span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.education-specialization p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.certifications-block {
+  margin-top: 78px;
+}
+
+.certifications-heading {
+  margin-bottom: 28px;
+}
+
+.certifications-heading .section-kicker {
+  margin-bottom: 7px;
+}
+
+.certifications-heading h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.certification-card {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: minmax(0, auto) 150px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  transition: border-color 240ms ease, box-shadow 240ms ease, transform 240ms ease;
+}
+
+.certification-card:hover {
+  border-color: color-mix(in srgb, var(--cyan) 55%, var(--line));
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.certification-thumbnail {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  background: #eef0f3;
+}
+
+.certification-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 360ms ease;
+}
+
+.certification-card:hover .certification-thumbnail img {
+  transform: scale(1.018);
+}
+
+.certification-thumbnail > span {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  background: rgba(5, 15, 30, 0.76);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 650;
+  backdrop-filter: blur(10px);
+}
+
+.certification-thumbnail svg {
+  width: 16px;
+  height: 16px;
+  color: var(--cyan);
+}
+
+.certification-content {
+  display: flex;
+  min-height: 228px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 23px 24px 21px;
+}
+
+.certification-issuer {
+  margin: 0 0 9px;
+  color: var(--cyan);
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.certification-card h4 {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 1.12rem;
+  line-height: 1.38;
+}
+
+.certification-year,
+.certification-note {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.certification-year {
+  margin: 0 0 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.certification-note {
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+
+.credential-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding: 9px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface-raised);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.credential-button:hover {
+  border-color: var(--cyan);
+  background: var(--cyan-soft);
+  color: var(--cyan);
+  transform: translateY(-2px);
+}
+
+.credential-button svg {
+  width: 17px;
+  height: 17px;
+  transition: transform 200ms ease;
+}
+
+.credential-button:hover svg {
+  transform: translate(2px, -2px);
+}
+
+.credential-dialog .MuiDialog-paper {
+  max-height: calc(100vh - 36px);
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 22px;
+  background: var(--surface);
+  background-image: none;
+  box-shadow: 0 35px 100px rgba(1, 9, 24, 0.42);
+  color: var(--text);
+}
+
+.credential-dialog .MuiBackdrop-root {
+  background: rgba(2, 8, 18, 0.78);
+  backdrop-filter: blur(8px);
+}
+
+.credential-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 26px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.credential-modal-header p,
+.credential-modal-header span {
+  margin: 0;
+  color: var(--cyan);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.credential-modal-header h2 {
+  max-width: 860px;
+  margin: 5px 0 7px;
+  color: var(--text);
+  font-size: clamp(1.2rem, 2.6vw, 1.85rem);
+  line-height: 1.3;
+}
+
+.credential-modal-header span {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 500;
+}
+
+.credential-close {
+  flex: 0 0 auto;
+  color: var(--text) !important;
+}
+
+.credential-modal-content {
+  display: grid;
+  overflow: auto;
+  place-items: center;
+  padding: 20px !important;
+  background: var(--bg-soft);
+}
+
+.credential-modal-content img {
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 180px);
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 740px) {
+  .education-grid,
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    min-height: 0;
+    padding: 25px;
+  }
+
+  .certification-content {
+    min-height: 220px;
+  }
+
+  .certification-card {
+    grid-template-rows: minmax(0, auto) 138px;
+  }
+
+  .certification-thumbnail {
+    height: 138px;
+  }
+
+  .credential-dialog .MuiDialog-paper {
+    width: calc(100% - 20px);
+    max-height: calc(100dvh - 20px);
+    margin: 10px;
+    border-radius: 16px;
+  }
+
+  .credential-modal-header {
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .credential-modal-content {
+    padding: 12px !important;
+  }
+
+  .credential-modal-content img {
+    max-height: calc(100dvh - 170px);
+  }
+}
