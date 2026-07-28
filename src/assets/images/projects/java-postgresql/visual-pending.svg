@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">Secure data management abstract project visual</title>
-  <desc id="desc">Abstract database and validation flow. Verified application screenshot pending.</desc>
+  <title id="title">Java and PostgreSQL data management application</title>
+  <desc id="desc">A database and validation flow representing secure record management.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#091726"/>
@@ -25,4 +25,3 @@
     <text x="76" y="610" fill="#9cadc8" font-size="18">Verified desktop application capture pending</text>
   </g>
 </svg>
-

@@ -167,22 +167,28 @@ function FeaturedProject({
         <p className="project-summary">{project.summary}</p>
 
         <div className="project-story">
-          <div>
-            <span>Problem</span>
-            <p>{project.problem}</p>
-          </div>
-          <div>
-            <span>Approach</span>
-            <ul>
-              {project.approach.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <span>Outcome</span>
-            <p>{project.outcome}</p>
-          </div>
+          {project.problem && (
+            <div>
+              <span>Challenge</span>
+              <p>{project.problem}</p>
+            </div>
+          )}
+          {project.approach.length > 0 && (
+            <div>
+              <span>Solution</span>
+              <ul>
+                {project.approach.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {project.outcome && (
+            <div>
+              <span>Outcome</span>
+              <p>{project.outcome}</p>
+            </div>
+          )}
         </div>
 
         {project.metrics.length > 0 && (
@@ -251,7 +257,7 @@ function Project() {
       <div className="section-heading">
         <span className="section-index">05</span>
         <div>
-          <p className="section-kicker">Problems, systems and measurable results</p>
+          <p className="section-kicker">Selected work</p>
           <h2 id="projects-title">Featured Projects</h2>
         </div>
       </div>
@@ -272,7 +278,7 @@ function Project() {
       </div>
 
       <div className="additional-heading">
-        <p className="section-kicker">More applied work</p>
+        <p className="section-kicker">More work</p>
         <h2>Additional Projects</h2>
       </div>
       <div className="additional-projects-grid">

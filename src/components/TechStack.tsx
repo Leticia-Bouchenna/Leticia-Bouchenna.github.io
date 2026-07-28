@@ -54,7 +54,7 @@ function TechStack() {
       <div className="section-heading">
         <span className="section-index">03</span>
         <div>
-          <p className="section-kicker">Tools selected for the problem</p>
+          <p className="section-kicker">Tools</p>
           <h2 id="stack-title">Technology Stack</h2>
         </div>
       </div>

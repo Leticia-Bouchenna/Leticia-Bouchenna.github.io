@@ -1,6 +1,5 @@
 import React from "react";
 import ArrowOutwardRoundedIcon from "@mui/icons-material/ArrowOutwardRounded";
-import WorkspacePremiumRoundedIcon from "@mui/icons-material/WorkspacePremiumRounded";
 import { Certification } from "../types/portfolio";
 
 interface CertificationCardProps {
@@ -43,10 +42,6 @@ function CertificationCard({
           alt=""
           loading="lazy"
         />
-        <span>
-          <WorkspacePremiumRoundedIcon />
-          Verified credential
-        </span>
       </div>
     </article>
   );

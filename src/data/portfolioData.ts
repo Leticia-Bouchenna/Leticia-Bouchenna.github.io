@@ -32,8 +32,7 @@ export const personalInfo: PersonalInfo = {
   availability: "Open to remote opportunities and international mobility",
   email: "leticiabouchena@gmail.com",
   profileImage,
-  profileImageAlt:
-    "Leticia Bouchenna working at a dual-monitor data science workstation",
+  profileImageAlt: "Leticia Bouchenna at a data science workstation",
   socialLinks: [
     {
       platform: "linkedin",
@@ -54,9 +53,8 @@ export const personalInfo: PersonalInfo = {
 };
 
 export const aboutParagraphs = [
-  "I am a Data Scientist and the founder of the MARIS Innovation Project. I design applied artificial intelligence solutions for real-world problems using complex, multilingual and sensitive data.",
-  "My work covers the complete Data and AI lifecycle: understanding business needs, collecting and preparing data, designing and evaluating models, developing user-facing applications and integrating human validation.",
-  "I am particularly interested in Machine Learning, Natural Language Processing, Speech AI, Generative AI and decision-support systems. My goal is not simply to train models, but to transform data and research into useful, reliable and deployable products.",
+  "I build applied AI solutions for real-world problems involving complex, multilingual and locally collected data.",
+  "My work covers the full lifecycle, from needs analysis and data preparation to model evaluation, decision-support applications and functional prototypes.",
 ];
 
 export const highlights = [
@@ -70,48 +68,48 @@ export const skillCategories: SkillCategory[] = [
     id: "data-science",
     title: "Data Science & Machine Learning",
     description:
-      "Data exploration, data cleaning, statistical analysis, classification, regression, clustering, customer segmentation, model evaluation and error analysis.",
-    technologies: ["Python", "Pandas", "NumPy", "scikit-learn", "PyTorch", "TensorFlow"],
+      "Data exploration, statistical modeling, classification, clustering, customer segmentation and model evaluation for practical decision-making.",
+    technologies: ["Python", "scikit-learn", "PyTorch"],
     icon: "analytics",
   },
   {
     id: "applied-ai",
     title: "Applied AI & Generative AI",
     description:
-      "Design of AI pipelines, fine-tuning, retrieval-augmented generation, prompt engineering, multi-agent workflows and human-in-the-loop validation.",
-    technologies: ["LLM", "RAG", "LoRA / QLoRA", "Transformers", "AI agents"],
+      "Design of applied AI pipelines using fine-tuning, retrieval, agentic workflows and human validation.",
+    technologies: ["LLM", "RAG", "LoRA / QLoRA"],
     icon: "ai",
   },
   {
     id: "nlp-speech",
     title: "NLP & Speech AI",
     description:
-      "Multilingual NLP, automatic speech recognition, information extraction, sentiment analysis, named-entity recognition and processing of low-resource languages.",
-    technologies: ["ASR", "NLP", "NER", "ABSA", "Audio preprocessing", "WER", "CER"],
+      "Multilingual speech recognition, information extraction and language analysis for low-resource and code-switched data.",
+    technologies: ["ASR", "NLP", "Information Extraction"],
     icon: "language",
   },
   {
     id: "data-engineering",
     title: "Data Engineering & Databases",
     description:
-      "Data preparation, ETL pipelines, relational modeling, data warehouses, data quality and analytical databases.",
-    technologies: ["SQL", "PostgreSQL", "Power Query", "ETL", "Star schema"],
+      "Data preparation, ETL pipelines, relational modeling, data warehouses and analytical database design.",
+    technologies: ["SQL", "PostgreSQL", "ETL"],
     icon: "database",
   },
   {
     id: "business-intelligence",
     title: "Business Intelligence & Decision Support",
     description:
-      "Interactive dashboards, KPI design, analytical storytelling, multidimensional analysis and decision-support applications.",
-    technologies: ["Power BI", "DAX", "Power Query M", "Plotly", "OLAP"],
+      "Interactive dashboards, KPI design, multidimensional analysis and data visualization for operational decision support.",
+    technologies: ["Power BI", "DAX", "OLAP"],
     icon: "insights",
   },
   {
     id: "applications",
     title: "Application Development",
     description:
-      "Development of data and AI applications, APIs, dashboards and secure desktop interfaces.",
-    technologies: ["FastAPI", "Streamlit", "Java", "Java Swing", "Git"],
+      "Development of web, API and desktop applications supporting Data and AI workflows.",
+    technologies: ["FastAPI", "Streamlit", "Java"],
     icon: "application",
   },
 ];
@@ -120,33 +118,19 @@ export const experiences: Experience[] = [
   {
     id: "maris",
     organization: {
-      name: "MARIS — Structured Information Analysis and Recommendation Engine",
+      name: "MARIS — Moteur d’Analyse et de Recommandation d’Informations Structurées",
       initials: "MARIS",
       logo: marisLogo,
       alt: "MARIS Innovation Project logo",
     },
     role: "Founder & Data Scientist",
-    subtitle: "Innovative Project — Degree-Startup Program",
+    subtitle: "Innovative Project — National Degree–Startup Program",
     period: "2026 — Present",
     location: "Béjaïa, Algeria",
     description:
-      "Founded and lead MARIS, an applied AI innovation project supported by the TIPA-SPACE university incubator. MARIS focuses on transforming complex, multilingual and locally collected data into practical decision-support solutions.",
-    highlights: [
-      "Defined the product vision and development roadmap for applied AI solutions adapted to local and multilingual data.",
-      "Led the project lifecycle from field research and business-needs analysis to data preparation, model evaluation and functional prototyping.",
-      "Designed evaluation protocols, operational KPIs and human-validation workflows to improve the reliability and usefulness of the developed systems.",
-      "Developed Alerte IA as the first product of MARIS, building on the research conducted during the Master’s project.",
-    ],
-    supportNote: "University incubation support: TIPA-SPACE.",
-    skills: [
-      "Applied AI",
-      "Product Development",
-      "Decision Support",
-      "Multilingual Data",
-      "Model Evaluation",
-      "Human-in-the-loop",
-      "Prototyping",
-    ],
+      "I founded and lead MARIS, an applied AI innovation project supported by the TIPA-SPACE university incubator. I lead the development of multilingual decision-support products, from needs analysis and data preparation to evaluation and functional prototyping.",
+    supportNote: "Alerte IA is MARIS’s first product.",
+    skills: ["Applied AI", "Product Development", "Decision Support", "Human-in-the-loop"],
   },
   {
     id: "bm-energie",
@@ -159,7 +143,7 @@ export const experiences: Experience[] = [
     period: "October 2025 — Present",
     location: "Béjaïa, Algeria",
     description:
-      "Develop project and site schedules, monitor resources and deadlines, analyze deviations between planned and actual progress and support corrective-action reporting.",
+      "Plan and monitor project schedules, resources, deadlines and corrective actions.",
     skills: ["Planning", "Monitoring", "Variance analysis", "Reporting"],
   },
   {
@@ -174,7 +158,7 @@ export const experiences: Experience[] = [
     period: "October 2025 — December 2025",
     location: "Béjaïa, Algeria",
     description:
-      "Conducted field observation, collected and analyzed multilingual emergency-call data and prepared anonymized information for Data Science and NLP experimentation.",
+      "Prepared anonymized multilingual emergency-call data for Data Science and NLP experimentation.",
     skills: ["Field research", "Data preparation", "Multilingual NLP", "Privacy"],
   },
   {
@@ -189,7 +173,7 @@ export const experiences: Experience[] = [
     period: "2025",
     location: "Béjaïa, Algeria",
     description:
-      "Built Power BI dashboards, prepared and modeled PostgreSQL data, designed DAX indicators and contributed to a customer-segmentation project.",
+      "Built Power BI dashboards, PostgreSQL models, DAX indicators and customer segments.",
     skills: ["Power BI", "PostgreSQL", "DAX", "Customer segmentation"],
   },
 ];
@@ -198,37 +182,31 @@ export const projects: Project[] = [
   {
     id: "alerte-ia",
     name: "Alerte IA — Multilingual Emergency Call Intelligence",
-    category: "Applied AI · Speech AI · NLP · Decision Support",
-    subtitle: "Master’s Research Project · MARIS Innovation Project",
+    category: "Applied AI · Speech AI · Decision Support",
+    subtitle: "Master’s Thesis · First Product of MARIS",
     featured: true,
     summary:
-      "An applied AI system designed to help emergency operators transform multilingual calls in Kabyle, Algerian Arabic and French into structured intervention information.",
+      "An applied AI system that transforms emergency calls in Kabyle, Algerian Arabic and French into structured intervention information.",
     problem:
-      "Emergency operators must rapidly identify the incident, location, urgency and victim-related details from multilingual and unstructured calls.",
+      "Extract critical details from multilingual and unstructured calls under strong time pressure.",
     approach: [
-      "Designed an end-to-end pipeline combining multilingual speech processing, structured information extraction, consistency controls and human validation.",
+      "Combined speech processing, structured information extraction and human validation in a functional web prototype.",
     ],
     metrics: [
       "234,933 historical calls analyzed",
       "6,069 multilingual audio resources prepared",
       "621 real emergency calls",
-      "5,448 complementary audio segments",
     ],
     outcome:
-      "Developed a functional prototype that converts voice information into structured and verifiable intervention records.",
+      "Developed a functional prototype that structures incident, location, urgency and victim-related information for emergency operators.",
     technologies: [
       "Python",
       "Speech AI",
       "NLP",
       "Information Extraction",
-      "Transformers",
       "Human-in-the-loop",
-      "Streamlit",
-      "FastAPI",
       "PostgreSQL",
     ],
-    note:
-      "Alerte IA is the first applied AI solution developed within the MARIS Innovation Project.",
   },
   {
     id: "ramypulse",
@@ -236,43 +214,33 @@ export const projects: Project[] = [
     category: "NLP · Sentiment Analysis · Marketing Intelligence",
     featured: true,
     summary:
-      "A multilingual customer-intelligence platform designed to analyze Algerian consumer opinions written in Darja, French and Arabizi.",
+      "A multilingual customer-intelligence platform for analyzing Algerian consumer opinions written in Darja, French and Arabizi.",
     problem:
-      "Generic sentiment-analysis tools struggle with Algerian dialect, code-switching, sarcasm and local expressions.",
+      "Generic sentiment-analysis systems struggle with Algerian dialect, code-switching and local expressions.",
     approach: [
-      "Specialized language model adapted to Algerian dialect",
-      "Aspect-based sentiment analysis and hybrid classification",
-      "Language-specific lexicon with an LLM fallback",
-      "RAG-powered conversational analysis",
-      "Dashboard, alerts and recommendations",
+      "Combined aspect-based sentiment analysis, specialized language modeling and conversational analysis.",
     ],
-    outcome:
-      "The functional prototype combines local-language modeling and decision-oriented analysis to turn public consumer comments into actionable marketing insight.",
-    technologies: ["Python", "NLP", "Transformers", "ABSA", "RAG", "LLM", "FastAPI", "Streamlit"],
-    metrics: ["96.6% accuracy", "0.94 macro F1", "28 / 29 adversarial tests", "1,834 comments prepared"],
+    outcome: "",
+    technologies: ["Python", "NLP", "Transformers", "ABSA", "RAG", "FastAPI"],
+    metrics: ["96.6% accuracy", "0.94 macro F1", "1,834 comments"],
     image: ramyPulseImage,
     imageAlt: "RamyPulse project logo on a dark background",
     note: "Presented at the AI EXPO 2026 competition.",
   },
   {
     id: "let-data-dz",
-    name: "Let-Data-DZ — Multilingual Speech Data Collection",
+    name: "Let-Data-DZ — Multilingual Speech Data Collection Platform",
     category: "Data Collection · Low-Resource Languages",
     featured: true,
     summary:
-      "A web platform created to collect guided speech recordings in Kabyle, Algerian Arabic and French for low-resource speech recognition research.",
-    problem:
-      "Low-resource speech systems need structured and language-aware data collection workflows before meaningful model training and evaluation can begin.",
+      "A multilingual platform for collecting guided speech recordings in Kabyle, Algerian Arabic and French.",
+    problem: "",
     approach: [
-      "Guided multilingual and role-based scenarios",
-      "Browser-based voice recording",
-      "Structured upload and secure cloud integration",
-      "Dataset organization and validation",
+      "Combines browser-based recording, guided scenarios, structured uploads and dataset validation.",
     ],
-    outcome:
-      "The platform supported the collection of 5,448 multilingual audio segments while keeping recording scenarios and dataset structure consistent.",
-    technologies: ["Python", "Streamlit", "Cloud Storage", "Audio Processing", "Data Validation"],
-    metrics: ["5,448 audio segments", "3 languages", "Guided role-based scenarios"],
+    outcome: "",
+    technologies: ["Python", "Streamlit", "Audio Processing", "Cloud Storage", "Data Validation"],
+    metrics: ["5,448 audio segments", "3 languages"],
     image: letDataImage,
     imageAlt:
       "Let-Data-DZ multilingual audio collection platform showing setup and guided recording screens",
@@ -284,16 +252,15 @@ export const projects: Project[] = [
     category: "Business Intelligence · Decision Support",
     featured: false,
     summary:
-      "A complete analytical system covering data warehouse design, ETL, multidimensional analysis and interactive visualization.",
-    problem:
-      "Operational data needs a coherent analytical model before decision-makers can explore trends across multiple business dimensions.",
-    approach: ["PostgreSQL star schema", "ETL and data marts", "Roll-up, drill-down, slice and dice", "Interactive OLAP visualization"],
+      "A data warehouse and OLAP system connecting multidimensional modeling with interactive business analysis.",
+    problem: "",
+    approach: [],
     outcome:
-      "Connected data modeling and multidimensional exploration in a single decision-support workflow.",
-    technologies: ["PostgreSQL", "SQL", "Python", "ETL", "OLAP", "Plotly", "Power BI"],
+      "Enabled roll-up, drill-down, slice and dice analysis.",
+    technologies: ["PostgreSQL", "SQL", "ETL", "OLAP", "Power BI"],
     metrics: [],
     image: olapImage,
-    imageAlt: "Abstract OLAP cube visual; verified project screenshot is pending",
+    imageAlt: "Interactive OLAP cube and analytical dashboard",
   },
   {
     id: "java-postgresql",
@@ -301,17 +268,15 @@ export const projects: Project[] = [
     category: "Software Engineering · Databases",
     featured: false,
     summary:
-      "A desktop application for securely managing structured and sensitive information through a graphical interface connected to PostgreSQL.",
-    problem:
-      "Structured records require consistent validation and controlled create, update, search and deletion workflows.",
-    approach: ["Java Swing interface", "PostgreSQL connectivity", "Input validation", "Centralized data management"],
+      "A secure PostgreSQL desktop application with validated record-management workflows.",
+    problem: "",
+    approach: [],
     outcome:
-      "Delivered a reliable desktop workflow for managing and validating user-submitted records.",
-    technologies: ["Java", "Java Swing", "NetBeans", "PostgreSQL", "SQL", "Input Validation"],
+      "Centralized reliable record management.",
+    technologies: ["Java", "Java Swing", "PostgreSQL", "SQL", "Input Validation"],
     metrics: [],
     image: javaImage,
-    imageAlt:
-      "Abstract database validation visual; verified desktop application screenshot is pending",
+    imageAlt: "Java and PostgreSQL data management application",
   },
   {
     id: "data-analytics",
@@ -319,16 +284,15 @@ export const projects: Project[] = [
     category: "Data Analytics · Business Intelligence",
     featured: false,
     summary:
-      "An analytical project combining business dashboards, data preparation and customer segmentation to support operational decision-making.",
-    problem:
-      "Sales, production, inventory and customer data must be transformed into clear indicators before teams can interpret operational performance.",
-    approach: ["Data quality control", "Power Query transformations", "DAX measures", "K-Means customer segmentation"],
+      "Business dashboards and customer segmentation for clearer operational insight.",
+    problem: "",
+    approach: [],
     outcome:
-      "Built analytical views for KPIs and customer profiles during the CEVITAL internship using anonymized or non-sensitive portfolio visuals.",
-    technologies: ["Power BI", "PostgreSQL", "SQL", "Power Query", "DAX", "Python", "scikit-learn", "K-Means"],
+      "Delivered KPI and customer-segmentation views.",
+    technologies: ["Power BI", "PostgreSQL", "DAX", "Python", "scikit-learn"],
     metrics: [],
     image: analyticsImage,
-    imageAlt: "Power BI dashboard created for an industrial data analytics project",
+    imageAlt: "Power BI dashboard for industrial data analysis",
   },
 ];
 
@@ -357,8 +321,6 @@ export const technologyConcepts = [
   "ASR",
   "LLM",
   "RAG",
-  "ABSA",
-  "LoRA / QLoRA",
   "Human-in-the-loop",
   "Decision Intelligence",
 ];
@@ -416,13 +378,13 @@ export const certifications: Certification[] = [
     issuer: "AI House · University of Blida 1",
     credentialImage: aiExpoCredential,
     credentialAlt:
-      "AI EXPO 2026 competition certificate of participation naming Leticia Bouchenna and Belghazi Warda",
+      "AI EXPO 2026 competition certificate of participation awarded to Leticia Bouchenna",
     note: "Participation in the AI EXPO 2026 competition with RamyPulse.",
   },
   {
     id: "english-club",
     title: "English Speaking Club Program",
-    year: "Completed · 2023 — 2024",
+    year: "June 2023 — October 2024",
     issuer: "Elites School of English",
     credentialImage: englishClubCredential,
     credentialAlt:

@@ -24,7 +24,7 @@ function Expertise() {
       <div className="section-heading">
         <span className="section-index">02</span>
         <div>
-          <p className="section-kicker">Capabilities, not buzzwords</p>
+          <p className="section-kicker">Capabilities</p>
           <h2 id="expertise-title">Expertise</h2>
         </div>
       </div>

@@ -19,9 +19,7 @@ function Education() {
       <div className="section-heading">
         <span className="section-index">06</span>
         <div>
-          <p className="section-kicker">
-            Academic foundations and continuous learning
-          </p>
+          <p className="section-kicker">Academic path</p>
           <h2 id="education-title">Education</h2>
         </div>
       </div>
@@ -49,7 +47,7 @@ function Education() {
 
       <div className="certifications-block" aria-labelledby="certifications-title">
         <div className="certifications-heading">
-          <p className="section-kicker">Verified learning & participation</p>
+          <p className="section-kicker">Credentials</p>
           <h3 id="certifications-title">Certifications & Programs</h3>
         </div>
         <div className="certification-grid">

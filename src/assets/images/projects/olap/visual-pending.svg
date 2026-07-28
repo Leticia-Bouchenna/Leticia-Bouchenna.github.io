@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">OLAP analytics abstract project visual</title>
-  <desc id="desc">Abstract three-dimensional analytical cube. Verified cube screenshot pending.</desc>
+  <title id="title">Interactive OLAP cube and analytical dashboard</title>
+  <desc id="desc">An analytical cube representing multidimensional OLAP exploration.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#081628"/>
@@ -27,4 +27,3 @@
     <text x="76" y="610" fill="#9cadc8" font-size="18">Verified cube capture pending</text>
   </g>
 </svg>
-

@@ -9,7 +9,7 @@ function About() {
       <div className="section-heading">
         <span className="section-index">01</span>
         <div>
-          <p className="section-kicker">How I work</p>
+          <p className="section-kicker">Profile</p>
           <h2 id="about-title">About Me</h2>
         </div>
       </div>

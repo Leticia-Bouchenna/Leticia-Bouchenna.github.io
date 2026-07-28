@@ -40,7 +40,7 @@ function Timeline() {
       <div className="section-heading">
         <span className="section-index">04</span>
         <div>
-          <p className="section-kicker">From research to operations</p>
+          <p className="section-kicker">Career</p>
           <h2 id="experience-title">Experience</h2>
         </div>
       </div>

@@ -11,6 +11,23 @@
 # production
 /build
 
+# private source assets
+/private-assets/
+/images/private/
+/source-images/
+/credentials-originals/
+/certificates-originals/
+
+# local internal reports and superseded review captures
+/DELIVERY_REPORT.md
+/FINAL_UPDATE_REPORT.md
+/TODO_ASSETS.md
+/TODO_LINKS.md
+/docs/screenshots/
+
+# unused local-only source kept outside the public bundle
+/src/assets/images/logos/institutions/tipa-space.jpg
+
 # local environment and secrets
 .env
 .env.*

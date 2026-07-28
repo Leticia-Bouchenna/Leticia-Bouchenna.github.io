@@ -29,14 +29,11 @@ function Contact() {
 
       <div className="contact-layout">
         <div className="contact-content" data-reveal="left">
-          <p className="section-kicker">
-            Open to meaningful work and collaboration
-          </p>
+          <p className="section-kicker">Contact</p>
           <h2 id="contact-title">Let’s Build Useful AI</h2>
           <p>
-            I am open to Data Science, Applied AI, Machine Learning and NLP
-            opportunities, as well as research collaborations and projects
-            involving multilingual or low-resource data.
+            Open to Data Science, Applied AI, multilingual NLP opportunities
+            and research collaborations.
           </p>
 
           <a className="contact-cta" href={`mailto:${personalInfo.email}`}>

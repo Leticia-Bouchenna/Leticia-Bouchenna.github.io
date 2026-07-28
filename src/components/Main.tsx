@@ -72,18 +72,13 @@ function Main() {
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="Abstract multilingual data and audio signal visual">
+        <div className="hero-visual">
           <svg
             className="signal-art"
             viewBox="0 0 720 720"
-            role="img"
-            aria-labelledby="signal-title signal-description"
+            aria-hidden="true"
+            focusable="false"
           >
-            <title id="signal-title">Multilingual data signal</title>
-            <desc id="signal-description">
-              Layered audio waves and connected data points representing Speech AI,
-              multilingual information extraction and decision intelligence.
-            </desc>
             <defs>
               <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="1">
                 <stop offset="0" stopColor="#39dcff" />
@@ -138,9 +133,11 @@ function Main() {
 
           <div className="profile-orbit">
             <img src={personalInfo.profileImage} alt={personalInfo.profileImageAlt} />
-            <span className="orbit-label orbit-label-one">Speech AI</span>
-            <span className="orbit-label orbit-label-two">NLP</span>
-            <span className="orbit-label orbit-label-three">Decision Intelligence</span>
+            <span className="orbit-label orbit-label-one" aria-hidden="true">Speech AI</span>
+            <span className="orbit-label orbit-label-two" aria-hidden="true">NLP</span>
+            <span className="orbit-label orbit-label-three" aria-hidden="true">
+              Decision Intelligence
+            </span>
           </div>
         </div>
       </div>
